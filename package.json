@@ -1,0 +1,27 @@
+{
+  "name": "instadownloader",
+  "version": "1.0.0",
+  "description": "Instagram downloader",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "dev": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "instagram",
+    "downloader",
+    "instagram",
+    "downloader",
+    "typescript"
+  ],
+  "author": "XnCN",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "axios-retry": "^3.5.0"
+  }
+}
