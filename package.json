@@ -1,7 +1,8 @@
 {
   "name": "@xncn/instadownloader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Instagram downloader",
+  "homepage": "https://github.com/XnCN/instagramdownloader",
   "main": "dist/index.js",
   "files": [
     "dist/**/*"
@@ -16,7 +17,11 @@
     "downloader",
     "instagram",
     "downloader",
-    "typescript"
+    "typescript",
+    "reals",
+    "photo",
+    "gallery",
+    "content"
   ],
   "author": "XnCN",
   "license": "ISC",
