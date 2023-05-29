@@ -14,20 +14,29 @@ This project provide an instagram api wrapper.You can use in your web services a
 You can install on npm
 
 ```bash
-  npm install
+  npm install @xncn/instadownloader
+
+  add module type package.json
+  {
+   "type": "module",
+  }
 ```
 
 ## Usage
 
 ```
-  import InstagramDownloader from ""
+import InstagramDownloader from "@xncn/instadownloader";
 
-  const data = await InstagramDownloader({
-      retryCount:2,
-      url:"https://instagram.com/content"
+async function Download() {
+  const data = await InstagramDownloader.default({
+    retryCount: 2,
+    url: "https://www.instagram.com/p/**",
   });
-
   console.log(data);
+}
+
+Download();
+
 
 ```
 
