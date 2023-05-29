@@ -1,6 +1,6 @@
 {
-  "name": "instadownloader",
-  "version": "1.0.0",
+  "name": "@xncn/instadownloader",
+  "version": "0.0.1",
   "description": "Instagram downloader",
   "main": "dist/index.js",
   "files": [
