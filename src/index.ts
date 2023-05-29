@@ -11,10 +11,12 @@ async function Download(setting: ISetting): Promise<IResult> {
     retries: setting.retryCount,
     retryDelay: axiosRetry.exponentialDelay,
   });
-  const { data } = await axios.post<IResponse>(
+  const { data, status } = await axios.post<IResponse>(
     "https://dowmate.com/api/allinone/",
     { url: setting.url }
   );
+  if (data.data.name != undefined)
+    throw Error("Api Error, please try again in few seconds");
   var strategy: IStrategy = StrategySelector(data);
   return strategy.Action(data);
 }

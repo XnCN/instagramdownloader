@@ -16,6 +16,7 @@ You can install on npm
 ```bash
   npm install @xncn/instadownloader
 
+  //if you are using typescript you dont need to add
   add module type package.json
   {
    "type": "module",
@@ -27,6 +28,7 @@ You can install on npm
 ```
 import InstagramDownloader from "@xncn/instadownloader";
 
+//if you are using typescript you dont need to add .default
 async function Download() {
   const data = await InstagramDownloader.default({
     retryCount: 2,

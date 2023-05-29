@@ -1,6 +1,6 @@
 {
   "name": "@xncn/instadownloader",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Instagram downloader",
   "homepage": "https://github.com/XnCN/instagramdownloader",
   "main": "dist/index.js",

@@ -21,7 +21,9 @@ function Download(setting) {
             retries: setting.retryCount,
             retryDelay: axios_retry_1.default.exponentialDelay,
         });
-        const { data } = yield axios_1.default.post("https://dowmate.com/api/allinone/", { url: setting.url });
+        const { data, status } = yield axios_1.default.post("https://dowmate.com/api/allinone/", { url: setting.url });
+        if (data.data.name != undefined)
+            throw Error("Api Error, please try again in few seconds");
         var strategy = (0, StrategySelector_1.default)(data);
         return strategy.Action(data);
     });
